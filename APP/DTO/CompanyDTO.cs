@@ -1,0 +1,13 @@
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace APP.DTO
+{
+    public class CompanyDTO
+    {
+        public int Id { get; init; }
+        [StringLength(50)]
+        public string Name { get; set; } = null!;
+        [StringLength(100)]
+        public string Location { get; set; } = null!;
+    }
+}
